@@ -1,0 +1,23 @@
+{
+    "files":{
+       "sources": [
+            { "from":"sources", "to":"." }
+       ],
+       "templates": [
+            "config/{{ terraform_sage_environment }}/{{ variables }}"
+       ],
+       "directories": [
+            "config/{{ terraform_sage_environment }}"
+       ],
+       "aliases": {
+            "variables":"templates/variables.tfvars"
+       }
+    },
+    "variables": {
+       "terraform_sage_environment": [
+           "dev", 
+           "production", 
+           "staging"
+       ]
+    }
+ }
