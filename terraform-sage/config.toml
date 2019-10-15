@@ -1,10 +1,10 @@
 [files]
 sources = [{ from = "sources", to = "."}]
-generated = ["config/{{ terraform_sage_environment }}/{{ variables }}"]
+files = ["config/{{ terraform_sage_environment }}/{{ variables }}"]
 directories = ["config/{{ terraform_sage_environment }}"]
-templates = [
+aliases = [
     { variables = "templates/variables.tfvars"}
 ]
 
-[config]
+[variables]
 terraform_sage_environment = ["dev", "production", "staging"]
