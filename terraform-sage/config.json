@@ -4,10 +4,10 @@
             { "from":"sources", "to":"." }
        ],
        "templates": [
-            "config/{{ terraform_sage_environment }}/{{ variables }}"
+            "configs/{{ terraform_sage_environment }}/{{ variables }}"
        ],
        "directories": [
-            "config/{{ terraform_sage_environment }}"
+            "configs/{{ terraform_sage_environment }}"
        ],
        "aliases": {
             "variables":"templates/variables.tfvars"
