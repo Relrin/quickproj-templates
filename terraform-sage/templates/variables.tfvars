@@ -1,1 +1,1 @@
-environment = {{ ts_environment }}
+environment = "{{ terraform_sage_environment }}"
